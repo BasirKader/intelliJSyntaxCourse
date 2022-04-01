@@ -1,0 +1,123 @@
+Inheritance in java:
+    This is mechanism in java through which one class can acquire the properties
+    and methods from another class.The class fromm which we acquire the properties is called
+    parent/superclass/baseclass and the class which acquire the properties and methods is called
+    Child class/derived class/subclass.
+
+Advantages:
+        1)code duplication is reduced.
+        2)saves memory
+        3)execution time is less
+Disadvantages:
+        Classes get tightly coupled.if we change some in the parent class it will affect all the
+        children classes,and we have to make sure that this change is compatible with the code
+        that we have in the children classes.
+When we should use Inheritance:
+        if there is a case in which we would have to use the same methods in many
+        classes the best practice would be to create a parent class and use it to extend the methods
+        into the subclasses.for example Cat class and Dog class.
+
+Types of inheritance:
+    we have 4 types of inheritance
+             1)single
+             2)hierarchical
+             3)multilevel
+             4)multiple
+
+Single Inheritance:
+In Single inheritance we have only one parent and only one child class.
+Class Animal{
+String name;
+String color;
+int age;
+double weight;
+}
+
+class Dog extends Animal{
+
+}
+
+Hierarchical inheritance:
+In Hierarchical we have only one parent class and multiple children classes.
+for example the Object class in JDK
+
+Class Animal{
+String name;
+String color;
+int age;
+double weight;
+}
+
+class Dog extends Animal{
+
+}
+
+class Cat extends Animal{
+
+}
+
+Multilevel Inheritance:
+If we have one parent and one child class and many intermediate classes it is called multilevel
+inheritance
+class Human{
+String name;
+
+}
+Employee extends Human{
+String EmployeedId;
+}
+class Teacher extends Employee{
+String subjects;
+}
+
+Multiple Inheritance:
+in multi inheritance we have a single class and multiple parent classes:This is not
+supported in Java with classes but possible with the help of interfaces.
+
+Class Display{
+int resolution;
+
+}
+Class Keyboard{
+int noOfKeys
+
+}
+Class Laptop extends Display,Keyboard{
+
+}
+Rules:
+   1)Private members are not inherited (private fields and private methods)
+   2)Constructors don't participate in inheritance
+   3)if we have constructor in the parent class we must have a matching constructor in the
+   children classes as well.
+   4)in java a subclass can only extend single parent class
+Super keyword:
+  Super keyword is a reference variable that we can use to access the fields or
+  methods or constructors of the parent class.
+Uses:
+   1)if we have same name fields in the parent class and in the child class
+   we can use super keyword to refer to the parent class field as by default
+   java prefers the instance field of the child class.
+   2)we can use the super keyword to call the method of the parent class
+   if we have same named method in the child class as well.
+   3)we can use super with() to call the parent class constructor.
+
+Overloading in Java:
+   When same method name exists in a class with different number of parameters or with
+   different type of parameters or with different sequence of parameters.
+Advantages of overloading:
+   1)More readable code
+   2)code is easier to use
+   3)flexible
+   4)we can have polymorphism with the help of method overloading.
+   when to overload a method:
+   if methods are performing same operations but with different parameters then we should
+   overload these methods.
+Rules:
+   1)Method name should be the same.
+   2)method signature(method name+parameter list)should be different.
+   3)we cant overload a method by just changing its return type
+   4)we cant overload a method by just changing its access modifiers(public private etc)
+   5)we cant overload a method by just changing its non-access modifiers(static
+   6)we can overload static methods and main methods as well.
+   7)constructors can also be overloaded.

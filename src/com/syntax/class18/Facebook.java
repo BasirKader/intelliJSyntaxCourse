@@ -6,13 +6,19 @@ public class Facebook {
     private int age;
 
     void setAge(int personAge){
-        if(personAge>13 && personAge<120){
+        if(personAge>12 && personAge<100){
             age=personAge;
         }else{
             System.out.println("not allowed its not a horse");
         }
     }
-
+    int getAge(String userPassword){
+        if(userPassword.equals(userPassword)){
+            return age;
+        }else{
+            return -1;
+        }
+    }
 
 
 }

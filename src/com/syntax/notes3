@@ -1,0 +1,88 @@
+Inheritance in Java:
+Its a mechanism in java through which a child gets the properties and methods from a parent class.
+
+Benefits:
+     1)Saves time to code
+     2)code duplication is reduced
+     3)execution time is faster
+Disadvantages:
+      Classes are tightly coupled if we change something in parent class it is also changed in the child class.
+Types of inheritance:
+There are 4 types of inheritance but java only supports 3 of them
+     1)single
+     2)Heirarchical
+     3)Multilevel
+     4)Multiple(not supported in java)
+Single inheritance:
+     In single inheritance we have only one child and on parent class or only two classes participate in
+     inheritance one as child one as parent.
+class Parent{
+
+}
+class Child extends Parent{
+
+}
+
+Heirarchical:
+    In heirarchical inheritance we have a single parent class and multiple child classes
+class Parent{
+
+}
+class Child1 extends Parent{
+
+}
+class Child2 extend Parent{
+
+}
+
+Multilevel:
+     We have Multiple levels of inheritance for example if we have classes A B C
+     Class C will be inherited from B and B will be inherited from A.
+Class A{
+
+}
+Class B extend A{
+
+}
+Class C extend B{
+
+}
+==============================================================================
+Super Keyword:
+super keyword is like the "this" it refers to the parent class object for example we can access the fields
+method or constructors of parent class inside the child class using this keyword.
+
+
+
+
+=======================================================================================
+
+Method overloading in java:
+if we have same named methods in a class with different number of parameters or different
+sequence of parameters or different data types of the parameters it is called method overloading.
+
+class calculator{
+
+add(int number,int number2){
+
+}
+add(double number,int number2){
+
+}
+add(double number,double number2){
+
+}
+add(int number,int number2,int number3){
+
+}
+}
+
+
+
+
+
+
+
+
+
+
